@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "comic-app"
+    }
+  },
+  "defaultProject": "comic-app",
+  "cli": {
+    "analytics": false
+  }
 }
