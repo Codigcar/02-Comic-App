@@ -15,11 +15,13 @@ export class BuscadorComponent implements OnInit {
   termino: string;
 
   constructor( private activatedRouter: ActivatedRoute,
-               private _hereoService: HeroesService) { }
+               private _hereoService: HeroesService) {
+  }
 
   ngOnInit(): void {
     this.activatedRouter.params.subscribe( params => {
       //console.log( params['termino'] ); Obtiene la palabra buscada enviada por parametro
+      
       this.termino = params['termino'];
       this.heroes = this._hereoService.getHeroeByName( params['termino']);
       console.log(this.heroes);

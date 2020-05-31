@@ -28,7 +28,8 @@ export class HeroeTarjetaComponent implements OnInit {
   verHereo(){
      /*  console.log("indice: " + this.Inputindice);
       this.router.navigate( ['/heroe',this.Inputindice ] ); */
-      this.heroeSeleccionado.emit( this.Inputindice ); // emitiendo el indice recibido
+      //this.heroeSeleccionado.emit( this.Inputindice ); // emitiendo el indice recibido
+      this.router.navigate( ['/heroe', this.Inputindice] );
   }
 
 }
