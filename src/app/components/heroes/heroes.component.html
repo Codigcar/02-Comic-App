@@ -18,6 +18,6 @@
         </div>
     </div> -->
 
-    <app-heroe-tarjeta [Inputheroe]="heroe" [Inputindice]="i" *ngFor="let heroe of heroes; let i = index"></app-heroe-tarjeta>
+    <app-heroe-tarjeta *ngFor="let heroe of heroes; let i = index" [Inputheroe]="heroe" [Inputindice]="i" (heroeSeleccionado)="verHereo( $event )"></app-heroe-tarjeta>
 
 </div>
